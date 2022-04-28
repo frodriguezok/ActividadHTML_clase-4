@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="source">Este es el primer div</div>
+        <div id="destination">Este es el segundo div</div>
+        <script>
+            var primerDiv = document.querySelector("#source")
+            var segundoDiv = document.querySelector("#destination")
+            var info = segundoDiv.textContent
+            segundoDiv.textContent = primerDiv.textContent
+            primerDiv.textContent = info
+        </script>
+    </body>
+</html>

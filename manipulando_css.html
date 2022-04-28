@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mis_estilos.css">
+    </head>
+    <body>
+        <div>
+            <p>Hola</p>
+        </div>
+        <script>
+            var div = document.querySelector("div")
+            setInterval(() => {
+                div.classList.toggle("square")
+            }, 1000);
+            console.log(div.classList) //Devuelve por consola los datos de la lista
+        </script>
+    </body>
+</html>

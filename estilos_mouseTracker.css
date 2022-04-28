@@ -1,0 +1,12 @@
+.posicion {
+    position: fixed;
+}
+
+.body {
+    height: 100vh;
+    background-color: green;
+}
+
+.puntero {
+    cursor: none;
+}

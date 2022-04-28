@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button>Enter</button>
+        <button>Borrar</button>
+        <script>
+            var color = prompt("Ingrese un color por favor")
+            console.log(color)
+            var botones = document.querySelectorAll("button")
+            var cuerpo = document.querySelector("body")
+            botones[0].addEventListener("click", function(){
+                cuerpo.style.backgroundColor = color
+            })
+
+            botones[1].addEventListener("click", function(){
+                cuerpo.style.backgroundColor = "white"
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="estilos_showMe.css">
+    </head>
+    <body>
+        <button>Show me the money</button><br>
+        <img src="dinero.jpg" height="350" width="350" class="oculto"><br>
+        <button>Show me Miami</button><br>
+        <img src="miami.jpg" height="350" width="350" class="oculto"><br>
+        <button>Show me Maiameee</button><br>
+        <img src="ricky.jpg" height="350" width="350" class="oculto">
+        <script>
+            var boton = document.querySelectorAll("button")
+            var imagen = document.querySelectorAll("img")
+            for (let i = 0; i < boton.length; i++) {
+                const unBoton = boton[i];
+                const unaImagen = imagen[i];
+                unBoton.addEventListener("click", function(){
+                    unaImagen.classList.toggle("oculto")
+                })
+            for (let i = 0; i < imagen.length; i++) {
+                const img = imagen[i];
+                img.addEventListener("click", function(){
+                    img.classList.add("oculto")
+                })
+            }
+        }
+        </script>
+    </body>
+</html>
