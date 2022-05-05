@@ -4,13 +4,11 @@
         <link rel="stylesheet" href="estilos_showMe.css">
     </head>
     <body>
-        <div>
-            <img src="https://media.giphy.com/media/MtQxKzhytFsmQ/giphy.gif" alt="">
-        </div>
+        <img src="https://media.giphy.com/media/MtQxKzhytFsmQ/giphy.gif">
         
         <script>
             var desaparecer = document.querySelector("img")
-            desaparecer.addEventListener("mouseover", function(){desaparecer.classList.remove("oculto")})
+            desaparecer.addEventListener("mouseover", function(){desaparecer.classList.toggle("oculto")})
         </script>
     </body>
 </html>

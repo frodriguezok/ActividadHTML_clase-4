@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+  
+  <h5> 
+      Escribi un color
+  </h5> 
+  
+  <label for="domTextElement">Name: </label>
+  <input type="text" id="unColor" > 
 
-    </head>
-    <body>
-        <button>Enter</button>
-        <button>Borrar</button>
-        <script>
-            var color = prompt("Ingrese un color por favor")
-            console.log(color)
-            var botones = document.querySelectorAll("button")
-            var cuerpo = document.querySelector("body")
-            botones[0].addEventListener("click", function(){
-                cuerpo.style.backgroundColor = color
-            })
-
-            botones[1].addEventListener("click", function(){
-                cuerpo.style.backgroundColor = "white"
-            })
-        </script>
-    </body>
-</html>
+  <script> 
+    var fondo = document.querySelector("body")
+    document.addEventListener('keydown', (event) => {
+        let color = document.getElementById("unColor").value;
+        var keyValue = event.key;
+        var codeValue = event.code;
+        fondo.style.backgroundColor = color
+    })
+  </script> 
+</body> 
+  
+</html> 
